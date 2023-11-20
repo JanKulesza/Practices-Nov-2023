@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/41d6578069.js" crossorigin="anonymous"></script>
+    <style>
+        .banner{
+            background-image: url("Images/miami.jpg");
+        }
+    </style>
+</head>
+<body>
+    <form action="/subscribe" method="post" id="newsletter" style="display: none;">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with the latest news and updates.</p><br>
+        <p><input type="email" name="email" placeholder="Enter your email address" required></p>
+        <button type="submit">Subscribe</button>
+        <button onclick="hideForm()">Cancel</button>
+      </form>
+    <div class="socials">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <header class="header">
+        <div class="left">
+            <button onclick="newsletter()">Subscribe</button>
+        </div>
+        <div class="middle">
+            <a href="home.html"><h1>Overlands Travel Blog</h1></a>
+        </div>
+        <div class="right">
+            <button onclick="darkMode()">
+                <i class="fa-solid fa-moon" id="icon"></i>
+            </button>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <br>
+                <ul id="menu">
+                    <li><h1>Overlands Travel Blog</h1></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </header><div class="filler"></div>
+    <div class="banner">
+        <div class="name">
+            <h1>Package Holidays in Miami <br> The Best Way to Relax</h1>
+        </div>
+    </div>
+    <main>
+        <article>
+        
+    <h2>Soak up the Sun on the Beaches</h2>
+
+    <p><span class="first_letter">A</span>re you yearning for a much-needed getaway? Look no further than Miami, the ultimate destination for relaxation and rejuvenation. With its pristine beaches, tropical climate, and vibrant atmosphere, Miami offers the perfect package holiday experience. Let's explore the best ways to unwind and find your inner zen in this coastal paradise.</p>
+
+    <p>Miami is renowned for its stunning beaches, where you can lay back on soft sands and soak up the warm sunshine. Whether it's the famous South Beach with its lively ambiance or the tranquil shores of Key Biscayne, find a comfortable beach chair, listen to the soothing sound of the waves, and let your worries melt away.</p>
+    
+    <h2>Explore Nature and Parks</h2>
+    <figure>
+    <img src="Images/park.jpg" style="width:100%;">
+    <figcaption>Park in Miami</figcaption>
+    </figure>
+    <p>Escape the hustle and bustle of the city by immersing yourself in Miami's natural wonders. Visit the stunning Everglades National Park, where you can take a leisurely airboat ride through the vast marshes, marvel at the diverse wildlife, and experience the tranquility of the swamplands. Alternatively, stroll through the lush landscapes of the Fairchild Tropical Botanic Garden and discover the beauty of exotic flora.</p>
+    
+    <h2>Enjoy Delicious Cuisine</h2>
+    
+    <p>Relaxation goes hand in hand with indulging in delectable cuisine, and Miami offers a diverse culinary scene to satisfy every palate. From fresh seafood to vibrant Latin American flavors, treat yourself to a culinary adventure in the city's renowned restaurants. Savor a romantic dinner by the waterfront or enjoy a casual beachside meal, accompanied by breathtaking views.</p>
+    
+    <h2>Embrace the Nightlife</h2>
+    <figure>
+    <img src="Images/nightlife.jpg" alt="Nightlife in Miami" style="width:100%;">
+    <figcaption>Rich Nightlife in Miami</figcaption>
+    </figure>
+    <p>As the sun sets, Miami comes alive with its vibrant nightlife. Dance the night away at the trendy clubs of South Beach, where world-class DJs spin energetic beats. Alternatively, unwind with a cocktail at a rooftop bar, offering stunning views of the city's skyline. Miami's nightlife scene offers endless possibilities for relaxation and enjoyment.</p>
+    
+    <p>In conclusion, Miami's package holidays provide the ideal opportunity to relax, rejuvenate, and escape from the stresses of everyday life. With its beautiful beaches, luxurious spas, captivating nature, exquisite cuisine, and lively nightlife, Miami promises an unforgettable experience that will leave you feeling refreshed and renewed.</p>
+  
+        </article>
+    </main>
+    <footer id="footer">
+        <div class="left">
+            <h2>Socials:</h2>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            Copyright © Jan Kulesza 2023
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/41d6578069.js" crossorigin="anonymous"></script>
+    <style>
+        .banner{
+            background-image: url("Images/everest.jpg");
+        }
+    </style>
+</head>
+<body>
+    <form action="/subscribe" method="post" id="newsletter" style="display: none;">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with the latest news and updates.</p><br>
+        <p><input type="email" name="email" placeholder="Enter your email address" required></p>
+        <button type="submit">Subscribe</button>
+        <button onclick="hideForm()">Cancel</button>
+      </form>
+    <div class="socials">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <header class="header">
+        <div class="left">
+            <button onclick="newsletter()">Subscribe</button>
+        </div>
+        <div class="middle">
+            <a href="home.html"><h1>Overlands Travel Blog</h1></a>
+        </div>
+        <div class="right">
+            <button onclick="darkMode()">
+                <i class="fa-solid fa-moon" id="icon"></i>
+            </button>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <br>
+                <ul id="menu">
+                    <li><h1>Overlands Travel Blog</h1></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </header><div class="filler"></div>
+    <div class="banner">
+        <div class="name">
+        <h1>My Story of Reaching Mount Everest</h1>
+        </div>
+    </div>
+    <main>
+        <article>
+            <h2>Training and Preparation</h2>
+
+            <p><span class="first_letter">H</span>ave you ever dreamt of conquering the world's highest peak? For me, reaching the summit of Mount Everest was an awe-inspiring journey filled with challenges, perseverance, and a sense of accomplishment like no other. Let me share with you my extraordinary experience of scaling the majestic Mount Everest.</p>
+            
+            <p>Preparing for the Everest expedition involved months of intense training. I focused on building physical endurance, stamina, and mental fortitude to tackle the extreme conditions of the mountain. Rigorous exercises, high-altitude simulations, and climbing practice became part of my daily routine, ensuring that I was well-prepared for the arduous journey ahead.</p>
+            
+            <h2>Trekking to Base Camp</h2>
+            <figure>
+            <img src="Images/trek.jpg" style="width:100%;">
+            <figcaption>Trekking to Everest Base Camp</figcaption>
+            </figure>
+            
+            <p>The journey to Mount Everest began with a challenging trek to Base Camp. The trail took us through breathtaking landscapes, crossing rivers, traversing glaciers, and ascending steep terrains. The camaraderie among fellow trekkers and the mesmerizing beauty of the Himalayas provided the motivation and inspiration to keep going.</p>
+            
+            <h2>Acclimatization and Summit Push</h2>
+            <figure>
+            <img src="Images/summit-push.jpg" style="width:100%;">
+            <figcaption>Summit Push</figcaption>
+            </figure>
+            <p>Acclimatization was a crucial aspect of the expedition. We spent weeks acclimatizing at different camps along the way, allowing our bodies to adapt to the thin air and extreme altitude. Finally, the time came for the summit push. It was a grueling and challenging ascent, battling freezing temperatures, low oxygen levels, and treacherous terrain. But the desire to stand on the roof of the world pushed me forward.</p>
+            
+            <h2>The Summit Achievement</h2>
+            
+            <p>Reaching the summit of Mount Everest was an indescribable moment of triumph. As I stood on the highest point on Earth, surrounded by a sea of peaks and the vastness of the Himalayas, a sense of awe and accomplishment washed over me. It was a testament to the human spirit's resilience and determination.</p>
+            
+            <h2>Reflection and Gratitude</h2>
+
+            <p>Looking back at the incredible journey, I am filled with gratitude for the opportunity to experience such an extraordinary feat. Mount Everest taught me valuable life lessons about perseverance, teamwork, and pushing beyond my limits. It is a reminder that with dedication and belief in oneself, we can conquer even the highest of mountains.</p>
+            
+            <p>In conclusion, my expedition to Mount Everest was an adventure of a lifetime. It tested my physical and mental strength, rewarded me with breathtaking views, and left an everlasting impact on my soul. Scaling the world's tallest peak is an experience that will forever be etched in my memory, reminding me of the heights we can reach when we dare to dream and never give up.</p>
+          </article>
+    </main>
+    <footer id="footer">
+        <div class="left">
+            <h2>Socials:</h2>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            Copyright © Jan Kulesza 2023
+        </div>
+    </footer>
+</body>
+</html>

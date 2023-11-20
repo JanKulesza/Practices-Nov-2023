@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/41d6578069.js" crossorigin="anonymous"></script>
+    <style>
+        .banner{
+            background-image: url("Images/eiger.jpg");
+        }
+    </style>
+</head>
+<body>
+        <form action="/subscribe" method="post" id="newsletter" style="display: none;">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with the latest news and updates.</p><br>
+            <p><input type="email" name="email" placeholder="Enter your email address" required></p>
+            <button type="submit">Subscribe</button>
+            <button onclick="hideForm()">Cancel</button>
+          </form>
+    <div class="socials">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <header class="header">
+        <div class="left">
+            <button onclick="newsletter()">Subscribe</button>
+        </div>
+        <div class="middle">
+            <a href="home.html"><h1>Overlands Travel Blog</h1></a>
+        </div>
+        <div class="right">
+            <button onclick="darkMode()">
+                <i class="fa-solid fa-moon" id="icon"></i>
+            </button>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <br>
+                <ul id="menu">
+                    <li><h1>Overlands Travel Blog</h1></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </header><div class="filler"></div>
+    <div class="banner">
+        <div class="name">
+        <h1>The Eiger Trail: A Breathtaking Journey Through the Swiss Alps</h1>
+        </div>
+    </div>
+    <main>
+        <article>
+            <h2>Trail Overview</h2>
+
+            <p><span class="first_letter">E</span>iger Trail in Switzerland offers an exhilarating and unforgettable hiking experience amidst the stunning scenery of the Swiss Alps. This iconic trail takes you on a journey through breathtaking landscapes, dramatic cliffs, and awe-inspiring views. Join us as we explore the beauty and allure of the legendary Eiger Trail.</p>
+            
+            <p>The Eiger Trail is a well-known hiking route that stretches from Eigergletscher to Alpiglen, offering a total distance of approximately 6 kilometers. This trail takes you along the base of the Eiger North Face, one of the most challenging and revered climbing routes in the world. As you hike, you'll be surrounded by towering peaks, pristine glaciers, and alpine meadows, creating a picturesque backdrop for your adventure.</p>
+            
+            <h2>Spectacular Views</h2>
+            <figure>
+            <img src="Images/eiger-2.jpg" style="width:100%;">
+            <figcaption>Breathtaking views of the Eiger</figcaption>
+            </figure>
+            
+            <p>The Eiger Trail rewards hikers with breathtaking views at every turn. From the starting point at Eigergletscher, you'll witness the majestic Eiger North Face in all its glory, with its imposing cliffs and cascading waterfalls. As you progress along the trail, you'll be treated to panoramic vistas of the surrounding peaks, including the Jungfrau and Mönch, as well as the charming village of Grindelwald nestled in the valley below.</p>
+            
+            <h2>Challenging and Rewarding</h2>
+            <figure>
+            <img src="Images/eiger-lake.jpg" style="width:100%;">
+            <figcaption>The Lake on Eiger Trail</figcaption>
+            </figure>
+            <p>The Eiger Trail presents a moderate level of difficulty, making it suitable for hikers with some experience. The trail consists of rugged terrain, steep ascents and descents, and narrow pathways. However, the challenges are well worth it, as you'll be immersed in a landscape that seems straight out of a postcard and experience a sense of accomplishment as you conquer each section of the trail.</p>
+            
+            <h2>Eiger Railway and Mountain Huts</h2>
+            
+            <p>For those looking to extend their adventure, the Eiger Railway provides a convenient way to access the trail. The railway takes you to the starting point at Eigergletscher, allowing you to focus on the hiking experience itself. Additionally, along the trail, there are mountain huts where hikers can rest, refuel, and spend the night, immersing themselves in the alpine atmosphere and waking up to breathtaking views.</p>
+            
+            <h2>Seasonal Considerations</h2>
+    
+            <p>It is important to note that the Eiger Trail is typically open from June to October, as weather conditions can be challenging during the winter months. It is recommended to check the trail's accessibility and weather forecasts before embarking on the hike to ensure a safe and enjoyable experience.</p>
+            
+            <h2>Appreciating Nature's Splendor</h2>
+    
+            <p>The Eiger Trail offers more than just a physical challenge; it also allows you to appreciate the splendor of nature. The serene alpine meadows, the sound of cascading waterfalls, and the crisp mountain air provide a sensory experience that rejuvenates the soul and instills a deep sense of awe and appreciation for the natural world.</p>
+            
+            <p>In conclusion, the Eiger Trail is a remarkable hiking adventure that combines breathtaking scenery, exhilarating challenges, and a profound connection with nature. It allows you to immerse yourself in the beauty of the Swiss Alps and experience firsthand the allure of the legendary Eiger North Face. Whether you're an avid hiker or a nature enthusiast, the Eiger Trail is an experience that will leave an indelible mark on your memory and inspire a lifelong love for the mountains.</p>
+          </article>
+    </main>
+    <footer id="footer">
+        <div class="left">
+            <h2>Socials:</h2>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            Copyright © Jan Kulesza 2023
+        </div>
+    </footer>
+</body>
+</html>

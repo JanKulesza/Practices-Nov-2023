@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/41d6578069.js" crossorigin="anonymous"></script>
+    <style>
+        .banner{
+            background-image: url("eiger.jpg");
+        }
+    </style>
+</head>
+<body>
+    <form action="/subscribe" method="post" id="newsletter" style="display: none;">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with the latest news and updates.</p><br>
+        <p><input type="email" name="email" placeholder="Enter your email address" required></p>
+        <button type="submit">Subscribe</button>
+        <button onclick="hideForm()">Cancel</button>
+      </form>
+    <div class="socials">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <header class="header">
+        <div class="left">
+            <button onclick="newsletter()">Subscribe</button>
+        </div>
+        <div class="middle">
+            <a href="home.html"><h1>Overlands Travel Blog</h1></a>
+        </div>
+        <div class="right">
+            <button onclick="darkMode()">
+                <i class="fa-solid fa-moon" id="icon"></i>
+            </button>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <br>
+                <ul id="menu">
+                    <li><h1>Overlands Travel Blog</h1></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </header><div class="filler"></div>
+    <main>
+        <h2>About Me</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus ultricies est, eu ultricies nisi mattis vitae. Donec a est euismod, dapibus lectus ut, rutrum mauris. Nullam mattis libero ut lectus venenatis finibus. Aenean scelerisque nisl eget arcu lacinia, sed semper eros pharetra. Donec hendrerit tristique dolor, non tincidunt purus pellentesque nec. Cras id mauris a erat vestibulum euismod. Aenean auctor
+        </p>
+        <p>
+            Vestibulum consectetur tortor vitae elit vehicula faucibus. Suspendisse id tincidunt sem, ut lacinia lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris eu ultrices nunc. Nunc a facilisis mauris, non maximus lacus. Sed consectetur velit id metus pulvinar, ac hendrerit justo faucibus. Nam eu nibh at lacus dignissim posuere id eget nulla. Suspendisse potenti. Aenean aliquet faucibus mi eget lobortis. Proin ac ex urna. Duis sed enim vitae ex scelerisque pharetra at in urna. In ut quam ipsum. Mauris non lobortis nunc, vitae rhoncus velit. Phasellus feugiat consectetur tellus, id maximus velit fringilla ut.
+        </p>
+    </main>
+    <footer id="footer">
+        <div class="left">
+            <h2>Socials:</h2>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            Copyright © Jan Kulesza 2023
+        </div>
+    </footer>
+</body>
+</html>
