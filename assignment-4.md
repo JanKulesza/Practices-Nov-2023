@@ -1,23 +1,23 @@
 <h1>﻿Algorytmy Kryptograficzne do Szyfrowania Hasła w Bazie Danych</h1>
 <ol>
-<li>Algorytmy Skrótu (Hashing):
-SHA-256:
+<li><h3>Algorytmy Skrótu (Hashing):</h3>
+<p><b>SHA-256:</b></p>
 <pre><?php
 function hash_password($password) {
     $hashed_password = hash('sha256', $password);
     return $hashed_password;
 }
 ?></pre></li>
-<li>Algorytmy Uwierzytelniania (Key Derivation Functions - KDF):
-PBKDF2:
+<li><h3>Algorytmy Uwierzytelniania (Key Derivation Functions - KDF):</h3>
+<p><b>PBKDF2:</b></p>
 <pre><?php
 function hash_password_pbkdf2($password, $salt) {
     $key = hash_pbkdf2("sha256", $password, $salt, 100000, 32);
     return $key;
 }
 ?></pre></li>
-<li>Algorytmy Szyfrowania Symetrycznego (Symmetric Encryption):
-AES:
+<li><h3>Algorytmy Szyfrowania Symetrycznego (Symmetric Encryption):</h3>
+<p><b>AES:</b></p>
 <pre><?php
 function encrypt_password_aes($password, $key) {
     $cipher = "aes-256-cbc";
@@ -59,8 +59,8 @@ function check_login_credentials($username, $provided_password) {
     } else {
         echo "Login failed.";
     }
-}
-// Funkcja do pobrania zaszyfrowanego hasła z bazy danych
+}</pre>
+<pre>// Funkcja do pobrania zaszyfrowanego hasła z bazy danych
 function get_encrypted_password_from_db($username) {
     // Kod pobierania hasła z bazy danych (pominięte dla czytelności)
     $pdo = new PDO("mysql:host=localhost;dbname=twoja_baza", "nazwa_uzytkownika", "haslo");
