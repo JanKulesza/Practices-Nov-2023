@@ -59,8 +59,8 @@ function check_login_credentials($username, $provided_password) {
     } else {
         echo "Login failed.";
     }
-}</pre>
-<pre>// Funkcja do pobrania zaszyfrowanego hasła z bazy danych
+}
+// Funkcja do pobrania zaszyfrowanego hasła z bazy danych
 function get_encrypted_password_from_db($username) {
     // Kod pobierania hasła z bazy danych (pominięte dla czytelności)
     $pdo = new PDO("mysql:host=localhost;dbname=twoja_baza", "nazwa_uzytkownika", "haslo");
