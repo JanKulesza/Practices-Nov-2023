@@ -1,22 +1,22 @@
 <h1>﻿Algorytmy Kryptograficzne do Szyfrowania Hasła w Bazie Danych</h1>
-<ol>
-<li><h3>Algorytmy Skrótu (Hashing):</h3>
+
+<h3>Algorytmy Skrótu (Hashing):</h3>
 <p><b>SHA-256:</b></p>
 <pre><?php
 function hash_password($password) {
     $hashed_password = hash('sha256', $password);
     return $hashed_password;
 }
-?></pre></li>
-<li><h3>Algorytmy Uwierzytelniania (Key Derivation Functions - KDF):</h3>
+?></pre>
+<h3>Algorytmy Uwierzytelniania (Key Derivation Functions - KDF):</h3>
 <p><b>PBKDF2:</b></p>
 <pre><?php
 function hash_password_pbkdf2($password, $salt) {
     $key = hash_pbkdf2("sha256", $password, $salt, 100000, 32);
     return $key;
 }
-?></pre></li>
-<li><h3>Algorytmy Szyfrowania Symetrycznego (Symmetric Encryption):</h3>
+?></pre>
+<h3>Algorytmy Szyfrowania Symetrycznego (Symmetric Encryption):</h3>
 <p><b>AES:</b></p>
 <pre><?php
 function encrypt_password_aes($password, $key) {
@@ -26,8 +26,8 @@ function encrypt_password_aes($password, $key) {
     $encrypted_password = openssl_encrypt($password, $cipher, $key, 0, $iv);
     return $encrypted_password;
 }
-?></pre></li>
-</ol>
+?></pre>
+
 
 <h4>Uwaga:</h4>
 W przypadku używania funkcji kryptograficznych, aby unikać błędów związanych z bezpieczeństwem, warto używać odpowiednich bibliotek i funkcji języka programowania. Dlatego warto skorzystać z gotowych bibliotek PHP, 
