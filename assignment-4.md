@@ -1,4 +1,4 @@
-﻿Algorytmy Kryptograficzne do Szyfrowania Hasła w Bazie Danych
+<h1>﻿Algorytmy Kryptograficzne do Szyfrowania Hasła w Bazie Danych</h1>
 
 1. Algorytmy Skrótu (Hashing):
 SHA-256:
