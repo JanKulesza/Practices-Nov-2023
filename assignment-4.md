@@ -30,7 +30,8 @@ function encrypt_password_aes($password, $key) {
 
 
 Uwaga:
-W przypadku używania funkcji kryptograficznych, aby unikać błędów związanych z bezpieczeństwem, warto używać odpowiednich bibliotek i funkcji języka programowania. Dlatego warto skorzystać z gotowych bibliotek PHP, takich jak Libsodium, do obsługi operacji kryptograficznych.
+W przypadku używania funkcji kryptograficznych, aby unikać błędów związanych z bezpieczeństwem, warto używać odpowiednich bibliotek i funkcji języka programowania. Dlatego warto skorzystać z gotowych bibliotek PHP, 
+takich jak Libsodium, do obsługi operacji kryptograficznych.
 Kod do Zapisu Zaszyfrowanych Danych w Bazie:
 <?php
 // Przykładowy kod zapisu zaszyfrowanego hasła do bazy danych
@@ -42,15 +43,6 @@ function save_encrypted_password_to_db($username, $encrypted_password) {
     $stmt->execute([$username, $encrypted_password]);
 }
 ?>
-
-
-
-
-
-
-
-
-
 
 
 Kod Sprawdzający Dane Logowania z Szyfrowaniem:
