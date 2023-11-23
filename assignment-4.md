@@ -2,12 +2,12 @@
 
 <h3>Algorytmy Skrótu (Hashing):</h3>
 <p><b>SHA-256:</b></p>
-<pre><?php
+<pre><code><?php
 function hash_password($password) {
     $hashed_password = hash('sha256', $password);
     return $hashed_password;
 }
-?></pre>
+?></code></pre>
 <h3>Algorytmy Uwierzytelniania (Key Derivation Functions - KDF):</h3>
 <p><b>PBKDF2:</b></p>
 <pre><?php
